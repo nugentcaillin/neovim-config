@@ -6,6 +6,7 @@ require("mason-lspconfig").setup {
 		"rust_analyzer",
 		"cssls",
 		"eslint",
+		"vtsls",
 	}
 }
 
@@ -102,7 +103,11 @@ require('lspconfig')['cssls'].setup {
 }
 
 
-require('lspconfig')['eslint'].setup {
+require('lspconfig')['eslint-lsp'].setup {
+	capabilities = capabilities,
+}
+
+require('lspconfig')['vtsls'].setup {
 	capabilities = capabilities,
 }
 
