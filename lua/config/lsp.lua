@@ -4,7 +4,8 @@ require("mason-lspconfig").setup {
 		"html",
 		"lua_ls",
 		"rust_analyzer",
-		"cssls"
+		"cssls",
+		"eslint",
 	}
 }
 
@@ -97,6 +98,11 @@ require('lspconfig')['html'].setup {
 }
 
 require('lspconfig')['cssls'].setup {
+	capabilities = capabilities,
+}
+
+
+require('lspconfig')['eslint'].setup {
 	capabilities = capabilities,
 }
 
