@@ -18,6 +18,7 @@ return {
 				"cssls",
 				"eslint",
 				"vtsls",
+				"emmet_ls"
 			}
 		}
 	},
@@ -52,6 +53,15 @@ return {
 			})
 			lspconfig.vtsls.setup({
 				capabilities = capabilities
+			})
+			lspconfig.emmet_ls.setup({
+				capabilities = capabilities,
+				filetypes = {"html", "javascriptreact"},
+				init_options = {
+					html = {
+						["bem.enabled"] = true,
+					}
+				}
 			})
 		end,
 	},

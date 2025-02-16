@@ -1,5 +1,4 @@
 require ("config.lazy")
-require("config.lsp")
 require("config.appearance")
 require("config.keymaps")
 require("config.indents")
