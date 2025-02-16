@@ -16,3 +16,5 @@ require("tokyonight").setup({
 
 vim.cmd("colorscheme tokyonight")
 
+vim.cmd("set colorcolumn=80")
+vim.cmd("highlight ColorColumn ctermbg=red guibg=VioletRed4")
